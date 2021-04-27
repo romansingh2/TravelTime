@@ -1,24 +1,23 @@
-const question = document.getElementById('question');
-const choices = Array.from(document.getElementsByClassName('choice-text'));
-const progressText = document.getElementById("progressText");
-const progressBarFull = document.getElementById("progressBarFull");
+const question = document.getElementById('question'); //return the element whose id is question and set it equal to the variable question
+const choices = Array.from(document.getElementsByClassName('choice-text')); //create an array out of the choices, using the choice-text class
+//console.log(choices)
+const progressText = document.getElementById("progressText"); //return the element whose id is progressText and set it equal to progressText
+const progressBarFull = document.getElementById("progressBarFull"); //return the element whose id is progressBarFull and set it equal to progressBarFull
 
-let currentQuestion = {};
-let acceptingAnswers = false;
-let score = 0;
+let currentQuestion = {}; //empty array
+let acceptingAnswers = false; 
+//let score = 0;  
 let questionCounter = 0;
 let availableQuestions = [];
 let userAnswers = [];
 
-let questions = [
+let questions = [ 
     {
         question: 'What Type of Travel Experience Would you Like?',
         choice1: 'Relaxing',
         choice2: 'Adventure',
         choice3: 'Sight Seeing',
         choice4: 'I do not know, I just need to get away!',
-
-
     },
 
     {
@@ -27,7 +26,6 @@ let questions = [
         choice2: "5-9 days",
         choice3: "9-14 days",
         choice4: "14+ days",
-
     },
 
       {
@@ -45,23 +43,16 @@ let questions = [
         choice2: "March-June",
         choice3: "June-september",
         choice4:"September-November",
-
     },
 ];
 
-//CONSTANTS
-const CORRECT_BONUS = 10;
 const MAX_QUESTIONS = 4;
 
 startGame = () => {
     questionCounter = 0;
-    score = 0;
-    availableQuestions = [...questions];
+    //score = 0;
+    availableQuestions = [...questions]; //set availableQuestions equal to the properties of the questions array
     getNewQuestion();
-    
-    
-    
-    
 };
 
 getNewQuestion = () => {
@@ -208,27 +199,25 @@ getNewQuestion = () => {
       return window.location.assign("/end");
     }
   }
+  questionCounter++; //increment questionCounter by 1
+  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`; //this will show "Question x/4", x being the current question number
+  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`; //set the width of the progress bar to be the percentage of questions answered
 
-  questionCounter++;
-  progressText.innerText = `Question ${questionCounter}/${MAX_QUESTIONS}`;
-  progressBarFull.style.width = `${(questionCounter / MAX_QUESTIONS) * 100}%`;
+    //let i = 0;
+    const questionIndex = 0
+   //console.log(questions)
+   // console.log(availableQuestions)
+    currentQuestion = availableQuestions[questionIndex]; //set currentQuestion equal to the actual current question along with the choices
+   // console.log(currentQuestion)
+    question.innerText = currentQuestion.question; // set the inner text of question equal to the question in currentQuestion
 
-    let i = 0;
-    const questionIndex = i++;
-    currentQuestion = availableQuestions[questionIndex];
-    question.innerText = currentQuestion.question;
-
-  choices.forEach(choice => {
-    const number = choice.dataset["number"];
-    choice.innerText = currentQuestion["choice" + number];
+  choices.forEach(choice => { //for each "choice" in the choices array
+    const number = choice.dataset["number"]; //get the choice number (without all the html code)
+    choice.innerText = currentQuestion["choice" + number];   //set the inner text of choice to the question
   });
 
-     
-
-  availableQuestions.splice(questionIndex, 1);
+  availableQuestions.splice(questionIndex, 1); //replaces 0th element with 1, removing the already answered questions
   acceptingAnswers = true;
-
-
 };
 
 choices.forEach((choice) => {
@@ -236,13 +225,12 @@ choices.forEach((choice) => {
         if (!acceptingAnswers) return;
 
         acceptingAnswers = false;
-        const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset['number'];
-        userAnswers.push(selectedAnswer);
+        const selectedChoice = e.target; //return the object that the event (in this case, click) was called upon, in other words return the choice that was selected
+        const selectedAnswer = selectedChoice.dataset['number']; //return the number of the selectedChoice
+        //console.log(selectedAnswer)
+        userAnswers.push(selectedAnswer); //add the answer into an array called userAnswers
         
-        
-        const classToApply =
-        selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        const classToApply =  'selected'; 
         
        
         
@@ -255,21 +243,7 @@ choices.forEach((choice) => {
 
       getNewQuestion();
     }, 200);
-  });
-  
-  
-  
-  
-  
-  
+  }); 
 });
-
-
-
-
-
-
-        
-        
         
 startGame();
