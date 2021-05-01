@@ -64,139 +64,139 @@ getNewQuestion = () => {
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 1 ) {
-        return window.location.assign("/B");
+        return window.location.assign("/TravelTime/templates/B");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 2 ) {
-        return window.location.assign("/C");
+        return window.location.assign("/TravelTime/templates/C");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 3 ) {
-        return window.location.assign("/D");
+        return window.location.assign("/TravelTime/templates/D");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 4 ) {
-        return window.location.assign("/E");
+        return window.location.assign("/TravelTime/templates/E");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 1 ) {
-        return window.location.assign("/F");
+        return window.location.assign("/TravelTime/templates/F");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 2 ) {
-        return window.location.assign("/G");
+        return window.location.assign("/TravelTime/templates/G");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 3 ) {
-        return window.location.assign("/H");
+        return window.location.assign("/TravelTime/templates/H");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 4 ) {
-        return window.location.assign("/I");
+        return window.location.assign("/TravelTime/templates/I");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 1) {
-        return window.location.assign("/J");
+        return window.location.assign("/TravelTime/templates/J");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 2) {
-        return window.location.assign("/K");
+        return window.location.assign("/TravelTime/templates/K");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 3) {
-        return window.location.assign("/K");
+        return window.location.assign("/TravelTime/templates/K");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 4) {
-        return window.location.assign("/M");
+        return window.location.assign("/TravelTime/templates/M");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 1) {
-        return window.location.assign("/N");
+        return window.location.assign("/TravelTime/templates/N");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 2) {
-        return window.location.assign("/O");
+        return window.location.assign("/TravelTime/templates/O");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 3) {
-        return window.location.assign("/P");
+        return window.location.assign("/TravelTime/templates/P");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 4) {
-        return window.location.assign("/Q");
+        return window.location.assign("/TravelTime/templates/Q");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 1) {
-        return window.location.assign("/R");
+        return window.location.assign("/TravelTime/templates/R");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 2) {
-        return window.location.assign("/S");
+        return window.location.assign("/TravelTime/templates/S");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 3) {
-        return window.location.assign("/T");
+        return window.location.assign("/TravelTime/templates/T");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 4) {
-        return window.location.assign("/U");
+        return window.location.assign("/TravelTime/templates/U");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 1) {
-        return window.location.assign("/V");
+        return window.location.assign("/TravelTime/templates/V");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 2) {
-        return window.location.assign("/W");
+        return window.location.assign("/TravelTime/templates/W");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 3) {
-        return window.location.assign("/X");
+        return window.location.assign("/TravelTime/templates/X");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 4) {
-        return window.location.assign("/Y");
+        return window.location.assign("/TravelTime/templates/Y");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 1) {
-        return window.location.assign("/Z");
+        return window.location.assign("/TravelTime/templates/Z");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 2) {
-        return window.location.assign("/A1");
+        return window.location.assign("/TravelTime/templates/A1");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 3) {
-        return window.location.assign("/A1");
+        return window.location.assign("/TravelTime/templates/A1");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 4) {
-        return window.location.assign("/A3");
+        return window.location.assign("/TravelTime/templates/A3");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 1) {
-        return window.location.assign("/A4");
+        return window.location.assign("/TravelTime/templates/A4");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 2) {
-        return window.location.assign("/A5");
+        return window.location.assign("/TravelTime/templates/A5");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 3) {
-        return window.location.assign("/A5");
+        return window.location.assign("/TravelTime/templates/A5");
     }
     
     else if (userAnswers[0] == 3 && (userAnswers[1] == 3 || userAnswers[1] == 4) && (userAnswers[2] == 3 || userAnswers[2] == 4) && userAnswers[3] == 4) {
-        return window.location.assign("/A5");
+        return window.location.assign("/TravelTime/templates/A5");
     }
     
     if (userAnswers[0] == 4) {
-        return window.location.assign("/relaxing");
+        return window.location.assign("/TravelTime/templates/relaxing");
     }
     
     else {
-      return window.location.assign("/end");
+      return window.location.assign("/TravelTime/templates/end");
     }
   }
   questionCounter++; //increment questionCounter by 1
