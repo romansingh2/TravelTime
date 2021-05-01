@@ -35,7 +35,7 @@ Session(app)
 db = SQL("sqlite:///travelers.db")
 
 
-@app.route("/homepage")
+@app.route("/")
 @login_required #user must be logged in to see index page
 def index():
 
@@ -241,7 +241,7 @@ def A5():
 
 
 
-@app.route("/", methods=["GET", "POST"]) #get -> get webpage, post -> submit data, when you hit login you will get the webpage, enter data and than submit
+@app.route("/login", methods=["GET", "POST"]) #get -> get webpage, post -> submit data, when you hit login you will get the webpage, enter data and than submit
 def login():
     """Log user in"""
 
