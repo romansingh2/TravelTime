@@ -60,7 +60,7 @@ getNewQuestion = () => {
     //go to the end page
     
     if (userAnswers[0] == 1) {
-        return window.location.assign("TravelTime/relaxing");
+        return window.location.assign("TravelTime/templates/relaxing");
     }
     
     else if (userAnswers[0] == 2 && (userAnswers[1] == 1 || userAnswers[1] == 2) && (userAnswers[2] == 1 || userAnswers[2] == 2) && userAnswers[3] == 1 ) {
