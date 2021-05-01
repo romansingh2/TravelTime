@@ -35,13 +35,12 @@ Session(app)
 db = SQL("sqlite:///travelers.db")
 
 
-
-
-@app.route("/")
+@app.route("/homepage")
 @login_required #user must be logged in to see index page
 def index():
 
         return render_template("index.html")
+
 
 @app.route("/quiz", methods=["GET", "POST"])
 @login_required #user must be logged in to see index page
@@ -242,7 +241,7 @@ def A5():
 
 
 
-@app.route("/login", methods=["GET", "POST"]) #get -> get webpage, post -> submit data, when you hit login you will get the webpage, enter data and than submit
+@app.route("/", methods=["GET", "POST"]) #get -> get webpage, post -> submit data, when you hit login you will get the webpage, enter data and than submit
 def login():
     """Log user in"""
 
